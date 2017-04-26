@@ -34,6 +34,7 @@
 
 #define MPP_TEST_FRAME_SIZE     SZ_1M
 #define MPP_TEST_PACKET_SIZE    SZ_512K
+#define MPP_MAX_INPUT_PACKETS   4
 
 static void mpp_notify_by_buffer_group(void *arg, void *group)
 {
@@ -116,8 +117,8 @@ MPP_RET Mpp::init(MppCtxType type, MppCodingType coding)
 
             mpp_task_queue_init(&mInputTaskQueue);
             mpp_task_queue_init(&mOutputTaskQueue);
-            mpp_task_queue_setup(mInputTaskQueue, 4);
-            mpp_task_queue_setup(mOutputTaskQueue, 4);
+            mpp_task_queue_setup(mInputTaskQueue, MPP_MAX_INPUT_PACKETS);
+            mpp_task_queue_setup(mOutputTaskQueue, MPP_MAX_INPUT_PACKETS);
         } else {
             mThreadCodec = new MppThread(mpp_dec_advanced_thread, this, "mpp_dec_parser");
 
@@ -291,7 +292,7 @@ MPP_RET Mpp::put_packet(MppPacket packet)
     }
 
     RK_U32 eos = mpp_packet_get_eos(packet);
-    if (mPackets->list_size() < 4 || eos) {
+    if (mPackets->list_size() < MPP_MAX_INPUT_PACKETS || eos) {
         MppPacket pkt;
         if (MPP_OK != mpp_packet_copy_init(&pkt, packet))
             return MPP_NOK;
@@ -822,7 +823,11 @@ MPP_RET Mpp::control_dec(MpiCmd cmd, MppParam param)
     case MPP_DEC_SET_IMMEDIATE_OUT:
     case MPP_DEC_SET_ENABLE_DEINTERLACE: {
         ret = mpp_dec_control(mDec, cmd, param);
-    }
+    } break;
+    case MPP_DEC_GET_FREE_PACKET_SLOT_COUNT: {
+        *((RK_S32 *)param) = MPP_MAX_INPUT_PACKETS - mPackets->list_size();
+         ret = MPP_OK;
+    } break;
     default : {
     } break;
     }
