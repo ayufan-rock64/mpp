@@ -15,6 +15,8 @@
  */
 
 #define MODULE_TAG "mpp_drm"
+/* Enable 64-bit mmap also when compiling for 32 bit */
+#define _FILE_OFFSET_BITS 64
 
 #include <unistd.h>
 #include <string.h>
