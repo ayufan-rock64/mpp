@@ -1,3 +1,40 @@
+mpp (1.4.0-1ayufan6) testing; urgency=medium
+
+  * rebase all changes onto latest mpp: 2dc830f0715bd256fc262ec41b008ee9c8b07b52
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Mon, 18 Mar 2019 11:24:32 +0100
+
+mpp (1.4.0-1ayufan3-3) testing; urgency=medium
+
+  * release again 
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Mon, 28 May 2018 20:11:22 +0200
+
+mpp (1.4.0-1ayufan3-2) testing; urgency=medium
+
+  * release again
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sat, 03 Mar 2018 00:20:21 +0100
+
+mpp (1.4.0-1ayufan3) testing; urgency=medium
+
+  * fix 32-bit mmap issue on 64-bit kernels: 263a0e974131ca0806dd93199f092e62fb9f5544
+  * retrieve available input packet free slots: ea45edab94c03bb48fe0cb9af971b9757de8dd3b
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Fri, 22 Dec 2017 09:39:54 +0100
+
+mpp (1.4.0-1ayufan2) testing; urgency=medium
+
+  * Remove dpkg-cross to solve compilation errors
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sun, 17 Dec 2017 22:02:29 +0100
+
+mpp (1.4.0-1ayufan1) testing; urgency=medium
+
+  * Include from rockchip's kernel include/uapi/video/rk_vpu_service.h
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sun, 17 Dec 2017 21:20:59 +0100
+
 mpp (1.4.0-1) stable; urgency=critical
 
   [ Herman Chen ]
@@ -197,6 +234,36 @@ mpp (1.4.0-1) stable; urgency=critical
   * [build]: a simple build rules
 
  -- Randy Li <randy.li@rock-chips.com>  Tue, 21 Nov 2017 07:35:23 +0000
+
+mpp (1.3.1-1ayufan5) xenial; urgency=medium
+
+  * Automated release
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Fri, 25 Aug 2017 15:20:47 +0200
+
+mpp (1.3.1-1ayufan4) xenial; urgency=medium
+
+  * Automated release
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Tue, 04 Jul 2017 19:20:58 +0200
+
+mpp (1.3.1-1ayufan3) xenial; urgency=medium
+
+  * Add dh-exec
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 22:04:51 +0000
+
+mpp (1.3.1-1ayufan2) xenial; urgency=medium
+
+  * Add dpkg-cross
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 21:49:55 +0000
+
+mpp (1.3.1-1ayufan1) xenial; urgency=medium
+
+  * Bump version
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 21:49:04 +0000
 
 mpp (1.3.1-1) testing; urgency=medium
 
