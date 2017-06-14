@@ -198,6 +198,36 @@ mpp (1.4.0-1) stable; urgency=critical
 
  -- Randy Li <randy.li@rock-chips.com>  Tue, 21 Nov 2017 07:35:23 +0000
 
+mpp (1.3.1-1ayufan5) xenial; urgency=medium
+
+  * Automated release
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Fri, 25 Aug 2017 15:20:47 +0200
+
+mpp (1.3.1-1ayufan4) xenial; urgency=medium
+
+  * Automated release
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Tue, 04 Jul 2017 19:20:58 +0200
+
+mpp (1.3.1-1ayufan3) xenial; urgency=medium
+
+  * Add dh-exec
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 22:04:51 +0000
+
+mpp (1.3.1-1ayufan2) xenial; urgency=medium
+
+  * Add dpkg-cross
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 21:49:55 +0000
+
+mpp (1.3.1-1ayufan1) xenial; urgency=medium
+
+  * Bump version
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Wed, 14 Jun 2017 21:49:04 +0000
+
 mpp (1.3.1-1) testing; urgency=medium
 
   * [allocator]: force using drm allocator in Linux platform
