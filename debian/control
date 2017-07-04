@@ -1,6 +1,6 @@
 Source: mpp
 Priority: optional
-Maintainer: Randy Li <randy.li@rock-chips.com>
+Maintainer: Kamil Trzcinski <ayufan@ayufan.eu>
 Build-Depends: debhelper (>= 9), cmake, dpkg-cross, dh-exec
 Standards-Version: 3.9.5
 Section: libs
