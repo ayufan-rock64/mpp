@@ -18,8 +18,10 @@
 #include "mpp_log.h"
 
 #include "allocator_std.h"
-#include "allocator_drm.h"
 #include "allocator_ion.h"
+#ifdef HAVE_DRM
+#include "allocator_drm.h"
+#endif
 
 /*
  * Linux only support MPP_BUFFER_TYPE_NORMAL so far
@@ -35,7 +37,11 @@ MPP_RET os_allocator_get(os_allocator *api, MppBufferType type)
     } break;
     case MPP_BUFFER_TYPE_ION : {
 #ifdef RKPLATFORM
+#ifdef HAVE_DRM
         *api = allocator_drm;
+#else
+        *api = allocator_ion;
+#endif
 #else
         *api = allocator_std;
 #endif

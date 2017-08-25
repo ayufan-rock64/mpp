@@ -1,5 +1,6 @@
 /*
- * Copyright 2015 Rockchip Electronics Co. LTD
+ *
+ * copyright 2017 Rockchip Electronics Co. LTD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +15,17 @@
  * limitations under the License.
  */
 
-#ifndef __JPEGD_API_H__
-#define __JPEGD_API_H__
-#include "parser_api.h"
+#ifndef __HAL_JPEGE_VEPU2_H
+#define __HAL_JPEGE_VEPU2_H
+#include "rk_type.h"
 
-#ifdef  __cplusplus
-extern "C" {
+MPP_RET hal_jpege_vepu2_init(void *hal, MppHalCfg *cfg);
+MPP_RET hal_jpege_vepu2_deinit(void *hal);
+MPP_RET hal_jpege_vepu2_gen_regs(void *hal, HalTaskInfo *task);
+MPP_RET hal_jpege_vepu2_start(void *hal, HalTaskInfo *task);
+MPP_RET hal_jpege_vepu2_wait(void *hal, HalTaskInfo *task);
+MPP_RET hal_jpege_vepu2_reset(void *hal);
+MPP_RET hal_jpege_vepu2_flush(void *hal);
+MPP_RET hal_jpege_vepu2_control(void *hal, RK_S32 cmd, void *param);
+
 #endif
-
-extern const ParserApi api_jpegd_parser;
-
-#ifdef  __cplusplus
-}
-#endif
-
-#endif /*__JPEGD_API_H__*/
