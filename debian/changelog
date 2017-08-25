@@ -1,3 +1,9 @@
+mpp (1.3.1-1ayufan5) xenial; urgency=medium
+
+  * Automated release
+
+ -- Kamil Trzcinski <ayufan@ayufan.eu>  Fri, 25 Aug 2017 15:20:47 +0200
+
 mpp (1.3.1-1ayufan4) xenial; urgency=medium
 
   * Automated release
