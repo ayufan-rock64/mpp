@@ -747,7 +747,7 @@ MPP_RET Mpp::control_dec(MpiCmd cmd, MppParam param)
     } break;
     case MPP_DEC_GET_FREE_PACKET_SLOT_COUNT: {
         *((RK_S32 *)param) = MPP_MAX_INPUT_PACKETS - mPackets->list_size();
-         ret = MPP_OK;
+        ret = MPP_OK;
     } break;
     default : {
     } break;
