@@ -1,3 +1,9 @@
+mpp (1.4.0-1ayufan1) testing; urgency=medium
+
+  * Include from rockchip's kernel include/uapi/video/rk_vpu_service.h
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sun, 17 Dec 2017 21:20:59 +0100
+
 mpp (1.4.0-1) stable; urgency=critical
 
   [ Herman Chen ]
