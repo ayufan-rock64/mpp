@@ -1,3 +1,9 @@
+mpp (1.4.0-1ayufan2) testing; urgency=medium
+
+  * Remove dpkg-cross to solve compilation errors
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sun, 17 Dec 2017 22:02:29 +0100
+
 mpp (1.4.0-1ayufan1) testing; urgency=medium
 
   * Include from rockchip's kernel include/uapi/video/rk_vpu_service.h
