@@ -1,3 +1,10 @@
+mpp (1.4.0-1ayufan3) testing; urgency=medium
+
+  * fix 32-bit mmap issue on 64-bit kernels: 263a0e974131ca0806dd93199f092e62fb9f5544
+  * retrieve available input packet free slots: ea45edab94c03bb48fe0cb9af971b9757de8dd3b
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Fri, 22 Dec 2017 09:39:54 +0100
+
 mpp (1.4.0-1ayufan2) testing; urgency=medium
 
   * Remove dpkg-cross to solve compilation errors
