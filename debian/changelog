@@ -1,3 +1,9 @@
+mpp (1.4.0-1ayufan4) testing; urgency=medium
+
+  * Rebase on top of c8a41a69a997926dc216d7b5ff47fd084d93a49f
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Fri, 02 Mar 2018 20:06:39 +0100
+
 mpp (1.4.0-1ayufan3) testing; urgency=medium
 
   * fix 32-bit mmap issue on 64-bit kernels: 263a0e974131ca0806dd93199f092e62fb9f5544
