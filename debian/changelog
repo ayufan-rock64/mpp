@@ -1,3 +1,9 @@
+mpp (1.4.0-1ayufan3-2) testing; urgency=medium
+
+  * release again
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Sat, 03 Mar 2018 00:20:21 +0100
+
 mpp (1.4.0-1ayufan3) testing; urgency=medium
 
   * fix 32-bit mmap issue on 64-bit kernels: 263a0e974131ca0806dd93199f092e62fb9f5544
