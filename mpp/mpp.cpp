@@ -746,9 +746,6 @@ MPP_RET Mpp::control_dec(MpiCmd cmd, MppParam param)
     case MPP_DEC_SET_DISABLE_ERROR: {
         ret = mpp_dec_control(mDec, cmd, param);
     } break;
-    case MPP_DEC_SET_OUTPUT_FORMAT: {
-        ret = mpp_dec_control(mDec, cmd, param);
-    } break;
     case MPP_DEC_GET_FREE_PACKET_SLOT_COUNT: {
         *((RK_S32 *)param) = MPP_MAX_INPUT_PACKETS - mPackets->list_size();
          ret = MPP_OK;
