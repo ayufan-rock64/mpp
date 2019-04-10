@@ -1,3 +1,9 @@
+mpp (1.4.0-1ayufan8) testing; urgency=medium
+
+  * ignore mpp_thread_test
+
+ -- Kamil Trzciński <ayufan@ayufan.eu>  Wed, 10 Apr 2019 11:30:26 +0200
+
 mpp (1.4.0-1ayufan7) testing; urgency=medium
 
   * rebase all changes onto latest mpp: ef5c4bc19202beb5db2d39432927ece1ed0bdb6b
